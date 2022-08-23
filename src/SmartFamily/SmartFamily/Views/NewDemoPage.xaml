@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SmartFamily.Views.NewDemoPage"
+             Title="NewDemoPage">
+    <VerticalStackLayout
+        Padding="0,30"
+        Spacing="10">
+        <Button
+            HorizontalOptions="Center"
+            Text="Generate Random Preference Values"
+            Command="{Binding ChangeValuesCommand}" />
+
+        <Label
+            FontSize="20"
+            Text="{Binding Message}"
+            VerticalOptions="Center"
+            HorizontalOptions="Center" />
+    </VerticalStackLayout>
+</ContentPage>
